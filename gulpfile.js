@@ -18,7 +18,7 @@ gulp.task('scripts', gulp.series('lint', function(){
     .pipe(uglify()) //input into here, and uglify
     .pipe(rename({ extname: '.min.js'})) // take uglified file and rename .min.js
     .pipe(gulp.dest('./build/js')); //put uglified and renamed file and put in 'build' folder
-})  );
+}));
 
 gulp.task('browser-sync', function(done){
     browserSync.init({

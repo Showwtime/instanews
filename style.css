@@ -17,9 +17,13 @@ body{
 .drop-down{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
 }
 
 .copyright{
     color: #c2c2c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
