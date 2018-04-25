@@ -1,0 +1,29 @@
+body{
+    background: black;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.nyt-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose-category{
+    text-align: center;
+}
+
+.drop-down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.copyright{
+    color: #c2c2c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
