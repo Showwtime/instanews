@@ -68,6 +68,8 @@ li {
  
 
 body{
+    display: flex;
+    flex-direction: column;
     border: 1px solid green;
     height: 100%;
     background: black;
@@ -82,16 +84,19 @@ body{
     margin-bottom: 30px;
 }
 
-.choose-category{
+.search{
     border: 1px solid yellow;
-    text-align: center;
-}
-
-.drop-down{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: auto;
+    padding: 0;
+}
+
+.my-select-menu{
+    max-width: 8rem;
+    text-align: center;
 }
 
 .copyright{
@@ -110,17 +115,41 @@ body{
 .box{
     background-image: url(http://fillmurray.com/g/600/400);
     background-size: cover;
-    height: 75vw;
-    max-height: 80vw;
+    height: 80vw;
     border: 1px solid deeppink;
 }
 
 
 //  Tablet =========================================================
 @media screen and (min-width: 600px){
-    .box{
-        max-height: 50vw;
-    }
+
+.nyt-image{
+    border: 1px solid red;
+    margin-bottom: 30px;
+}
+
+.header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+    
+.search{
+    border: 1px solid yellow;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid{
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr;
+}
+    
+.box{
+    max-height: 75vw;
+}
 }
 
 
@@ -128,7 +157,34 @@ body{
 
 // Desktop =========================================================
 @media screen and (min-width: 1000px){
-    .box{
-        max-height: 50vw;
+
+.nyt-image{
+    border: 1px solid red;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header p, header .drop-down{
+    flex-direction: column;
+}
+    
+.search{
+    border: 1px solid yellow;
+    display: flex;
+}
+
+.grid{
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+}
+        
+.box{
+    max-height: 50vw;
 }
 }

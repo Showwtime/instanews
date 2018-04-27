@@ -6,16 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./build/css/style.min.css" type="text/css" rel="stylesheet">
     <title>Instanews!!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./build/js/script.min.js"></script>
 </head>
 <body>
-    <div class="nyt-image">
-        <img src="assets/images/nyt-logo.svg">
-    </div>
+    <header class="header">
+        <div class="nyt-image">
+            <img src="assets/images/nyt-logo.svg">
+        </div>
+        <div class="search">
+            <p class='choose-category'>Choose a Category</p>
 
-    <p class='choose-category'>Choose a Category</p>
-
-    <div class="drop-down">
-        <select id="my-select-menu">
+            <select class="my-select-menu">
                 <option value="">-- Sections --</option>
                 <option value="home">Home</option>
                 <option value="Opinion">Opinion</option>
@@ -31,9 +33,9 @@
                 <option value="travel">Travel</option>
                 <option value="realestate">Realestate</option>
                 <option value="automotive">Automotive</option>
-         </select>
-    </div>
-
+            </select>
+        </div>
+    </header>
     <section class="grid">
             <article class="box">1</article>
             <article class="box">2</article>
@@ -53,6 +55,5 @@
         <p>&copy; Copyright 2018 INSTANEWS</p>
     </footer>
 
-    <script src="build/js/script.min.js"></script>
 </body>
 </html>
