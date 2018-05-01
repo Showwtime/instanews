@@ -10,17 +10,17 @@
     <script src="./build/js/script.min.js"></script>
 </head>
 <body>
-    <header class="header">
+    <header class="logo-and-selector">
         <div class="nyt-image">
             <img src="assets/images/nyt-logo.svg">
         </div>
         <div class="search">
             <p class='choose-category'>Choose a Category</p>
 
-            <select class="my-select-menu">
+            <select class="select-menu" id="select-menu">
                 <option value="">-- Sections --</option>
                 <option value="home">Home</option>
-                <option value="Opinion">Opinion</option>
+                <option value="opinion">Opinion</option>
                 <option value="world">World</option>
                 <option value="national">National</option>
                 <option value="politics">Politics</option>
@@ -32,23 +32,14 @@
                 <option value="food">Food</option>
                 <option value="travel">Travel</option>
                 <option value="realestate">Realestate</option>
-                <option value="automotive">Automotive</option>
+                <option value="automobiles">Automobiles</option>
             </select>
         </div>
     </header>
-    <section class="grid">
-            <article class="box">1</article>
-            <article class="box">2</article>
-            <article class="box">3</article>
-            <article class="box">4</article>
-            <article class="box">5</article>
-            <article class="box">6</article>
-            <article class="box">7</article>
-            <article class="box">8</article>
-            <article class="box">9</article>
-            <article class="box">10</article>
-            <article class="box">11</article>
-            <article class="box">12</article>
+
+    <section class="news-grid" id="news-grid">
+        <div class="grid" id="grid">
+        </div>
     </section>
 
     <footer class="copyright">

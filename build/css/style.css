@@ -72,14 +72,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid green;
   height: 100%;
   background: black;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   color: #ffffff; }
 
 .nyt-image {
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,8 +87,12 @@ body {
           justify-content: center;
   margin-bottom: 30px; }
 
+.choose-category {
+  margin-bottom: 10px; }
+
 .search {
-  border: 1px solid yellow;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,15 +106,47 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto;
+  margin-bottom: 2rem;
   padding: 0; }
 
-.my-select-menu {
+.select-menu {
+  font-family: 'Open Sans', sans-serif;
   max-width: 8rem;
-  text-align: center; }
+  text-align: center;
+  font-size: 1rem; }
+
+.wrapper {
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none; }
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: auto; }
+
+.grid-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20rem;
+  background-size: cover;
+  background-position: center; }
+
+.news-caption {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 20px; }
 
 .copyright {
-  border: 1px solid blue;
   color: #c2c2c2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,23 +156,13 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
-
-.grid {
-  display: grid;
-  grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr; }
-
-.box {
-  background-image: url(http://fillmurray.com/g/600/400);
-  background-size: cover;
-  height: 80vw;
-  border: 1px solid deeppink; }
+          align-items: center;
+  margin: 20px 0; }
 
 @media screen and (min-width: 600px) {
   .nyt-image {
-    border: 1px solid red;
     margin-bottom: 30px; }
-  .header {
+  .logo-and-selector {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -148,7 +173,6 @@ body {
         -ms-flex-align: center;
             align-items: center; }
   .search {
-    border: 1px solid yellow;
     margin: 0;
     padding: 0;
     display: -webkit-box;
@@ -158,39 +182,34 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+  .news-grid {
+    display: block; }
   .grid {
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr; }
-  .box {
-    max-height: 75vw; } }
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr; } }
 
 @media screen and (min-width: 1000px) {
   .nyt-image {
-    border: 1px solid red;
     display: inline-block;
     margin-bottom: 30px; }
-  .header {
+  .logo-and-selector {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  header p, header .drop-down {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
   .search {
-    border: 1px solid yellow;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
   .grid {
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr; }
-  .box {
-    max-height: 50vw; } }
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr; } }
