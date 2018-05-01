@@ -126,9 +126,10 @@ body{
 }
 
 .news-caption{
-    justify-content: center;
-    align-items: flex-end;
-    padding: 20px;
+    display: flex;
+    align-self: flex-end;
+    padding: 15px;
+    background: linear-gradient(180deg,rgba(0,0,0,0.25) 0 ,rgba(0,0,0,0.25))
 }
 
 
@@ -167,7 +168,7 @@ body{
 
 .grid{
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr;
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr;
 }
     
 
@@ -197,7 +198,8 @@ body{
 
 .grid{
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    margin-bottom: 0;
 }
         
 
