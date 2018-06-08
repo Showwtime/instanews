@@ -128,9 +128,11 @@ body{
 
 .grid-item{
     display: flex;
-    height: 20rem;
-    background-size: cover;
-    background-position: bottom;
+    height: 420px;
+    width: 100%;
+    max-width: 600px;
+    background-size: cover !important; // need help if noticed
+    background-position: 50% !important; // need help if noticed
 }
 
 .news-caption{
