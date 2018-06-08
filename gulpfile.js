@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     sass = require("gulp-sass"),
     autoprefixer = require("gulp-autoprefixer"),
     cssnano = require("gulp-cssnano");
+    babel = require("gulp-babel");
 
 gulp.task("sass", function() {
     return gulp
@@ -34,6 +35,9 @@ gulp.task('lint', function(){
 gulp.task('scripts', gulp.series('lint', function(){
     return gulp
     .src('./js/*.js') //Take this file
+    .pipe(babel({
+        presets: ['env']
+    }))
     .pipe(uglify()) //input into here, and uglify
     .pipe(rename({ extname: '.min.js'})) // take uglified file and rename .min.js
     .pipe(gulp.dest('./build/js')); //put uglified and renamed file and put in 'build' folder

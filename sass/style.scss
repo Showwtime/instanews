@@ -117,6 +117,7 @@ body{
     color: #fff;
     font-weight: 300;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .grid{
@@ -128,8 +129,8 @@ body{
 .grid-item{
     display: flex;
     height: 20rem;
-    background-size: 100% auto;
-    background-position: center;
+    background-size: cover;
+    background-position: bottom;
 }
 
 .news-caption{
@@ -147,6 +148,19 @@ body{
     margin: 3rem 0;
 }
 
+.header-active{
+    transition-duration: 1s; 
+    margin-bottom: 0;
+    .nyt-image img{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.loading{
+    text-align: center;
+    display: none;
+}
 
 //  Tablet =========================================================
 @media screen and (min-width: 600px){
@@ -180,12 +194,15 @@ body{
     grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr;
 }
 
-// .grid-item{
-//     display: flex;
-//     height: 20rem;
-//     background-size: cover;
-//     background-position: center;
-// }
+.header-active{
+    transition-duration: 1s; 
+    margin-bottom: 0;
+    .nyt-image img{
+        width: 75px;
+        height: 75px;
+    }
+
+}
 
 } //End of tablet
 
@@ -215,11 +232,15 @@ body{
     margin-bottom: 0;
 }
 
-// .grid-item{
-//     display: flex;
-//     height: 20rem;
-//     background-size: cover;
-//     background-position: center;
-// }
+.header-active{
+    transition-duration: 1s; 
+    margin-bottom: 0;
+    .nyt-image img{
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
 
 } // End of Desktop
